@@ -13,9 +13,6 @@ platforms:
       provision_command:
         - apt-get -y install build-essential
 
-  - name: chef/centos-7.0
-
-
 suites:
   - name: default
     run_list:

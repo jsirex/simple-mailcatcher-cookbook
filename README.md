@@ -14,11 +14,21 @@ This cookbook installs simple-mailcatcher using chefs' embedded ruby.
 
 # Attributes
 
-* `node['simple']['mailcatcher']['foo']` -  Defaults to `bar`.
+* `node['mailcatcher']['user']` -  Defaults to `mailcatcher`.
+* `node['mailcatcher']['group']` -  Defaults to `mailcatcher`.
+* `node['mailcatcher']['dir']` -  Defaults to `/opt`.
+* `node['mailcatcher']['version']` -  Defaults to `0.6.1`.
+* `node['mailcatcher']['smtp']['ip']` -  Defaults to `0.0.0.0`.
+* `node['mailcatcher']['smtp']['port']` -  Defaults to `1025`.
+* `node['mailcatcher']['http']['ip']` -  Defaults to `0.0.0.0`.
+* `node['mailcatcher']['http']['port']` -  Defaults to `1080`.
 
 # Recipes
 
 * simple-mailcatcher::default
+* simple-mailcatcher::install
+* simple-mailcatcher::service_init
+* simple-mailcatcher::user
 
 # License and Maintainer
 

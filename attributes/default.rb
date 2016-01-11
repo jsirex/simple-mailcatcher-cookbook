@@ -1,7 +1,7 @@
 default['mailcatcher']['user'] = 'mailcatcher'
 default['mailcatcher']['group'] = 'mailcatcher'
 default['mailcatcher']['dir'] = '/opt'
-default['mailcatcher']['version'] = '0.6.1'
+default['mailcatcher']['version'] = '0.6.2'
 
 # Network
 default['mailcatcher']['smtp']['ip'] = '0.0.0.0'

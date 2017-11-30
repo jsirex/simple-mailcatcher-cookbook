@@ -5,7 +5,7 @@ user 'mailcatcher user' do
   comment 'MailCatcher User'
   home "#{node['mailcatcher']['dir']}/mailcatcher"
   shell '/bin/bash'
-  supports manage_home: true
+  manage_home true
   action :create
   system true
 end

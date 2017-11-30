@@ -15,7 +15,7 @@ supports 'centos', '>= 7.0'
 
 # depends 'cookbook', '>= 0.0.0'
 
-# chef_version '>= 12.12'
+chef_version '>= 12.12'
 
 # Provided recipes
 recipe 'simple-mailcatcher::default', 'Installs mailcatcher using embedded ruby in chef'

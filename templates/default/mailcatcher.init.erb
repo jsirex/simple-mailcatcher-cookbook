@@ -1,5 +1,15 @@
 #!/bin/bash
 
+### BEGIN INIT INFO
+# Provides:          mailcatcher
+# Required-Start:    $remote_fs $syslog
+# Required-Stop:     $remote_fs $syslog
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: Mailcatcher daemon
+# Description:       Mailcatcher daemon
+### END INIT INFO
+
 PID_FILE=/var/run/mailcatcher.pid
 NAME=mailcatcher
 PROG="/opt/chef/embedded/bin/mailcatcher"
@@ -23,11 +33,7 @@ start() {
         --group $GROUP \
         --chuid $USER \
         -- \
-        --foreground \
-        --http-ip=0.0.0.0 \
-        --http-port=1080 \
-        --smtp-port=1025 \
-        --smtp-ip=0.0.0.0
+        <%= node['mailcatcher']['options'].values.join(' ') %>
 
     echo "."
     return $?

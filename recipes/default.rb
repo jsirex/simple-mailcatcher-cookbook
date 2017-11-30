@@ -1,5 +1,5 @@
 # frozen_string_literal: true
 
-%w[user install service_init].each do |r|
-  include_recipe "#{cookbook_name}::#{r}"
-end
+include_recipe 'simple-mailcatcher::user'
+include_recipe 'simple-mailcatcher::install'
+include_recipe "simple-mailcatcher::#{node['mailcatcher']['service_recipe']}"

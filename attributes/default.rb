@@ -5,9 +5,12 @@ default['mailcatcher']['group'] = 'mailcatcher'
 default['mailcatcher']['dir'] = '/opt'
 default['mailcatcher']['version'] = '0.6.2'
 
-# Network
-default['mailcatcher']['smtp']['ip'] = '0.0.0.0'
-default['mailcatcher']['smtp']['port'] = '1025'
+default['mailcatcher']['service_recipe'] = 'service_systemd'
 
-default['mailcatcher']['http']['ip'] = '0.0.0.0'
-default['mailcatcher']['http']['port'] = '1080'
+# Options
+default['mailcatcher']['options']['foreground'] = '--foreground'
+default['mailcatcher']['options']['smtp-ip'] = '--smtp-ip 0.0.0.0'
+default['mailcatcher']['options']['smtp-port'] = '--smtp-port 1025'
+
+default['mailcatcher']['options']['http-ip'] = '--http-ip 0.0.0.0'
+default['mailcatcher']['options']['http-port'] = '--http-port 1080'

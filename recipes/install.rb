@@ -1,7 +1,8 @@
 # frozen_string_literal: true
 
-package 'build-essential'
-package 'libsqlite3-dev'
+build_essential 'install-build-essential' do
+  compile_time true
+end
 
 chef_gem 'mailcatcher' do
   compile_time false

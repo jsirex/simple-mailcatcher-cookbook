@@ -18,11 +18,13 @@ This cookbook installs simple-mailcatcher using chefs' embedded ruby.
 * `node['mailcatcher']['user']` -  Defaults to `mailcatcher`.
 * `node['mailcatcher']['group']` -  Defaults to `mailcatcher`.
 * `node['mailcatcher']['dir']` -  Defaults to `/opt`.
-* `node['mailcatcher']['version']` -  Defaults to `0.6.2`.
-* `node['mailcatcher']['smtp']['ip']` -  Defaults to `0.0.0.0`.
-* `node['mailcatcher']['smtp']['port']` -  Defaults to `1025`.
-* `node['mailcatcher']['http']['ip']` -  Defaults to `0.0.0.0`.
-* `node['mailcatcher']['http']['port']` -  Defaults to `1080`.
+* `node['mailcatcher']['version']` -  Defaults to `0.6.5`.
+* `node['mailcatcher']['service_recipe']` -  Defaults to `service_systemd`.
+* `node['mailcatcher']['options']['foreground']` -  Defaults to `--foreground`.
+* `node['mailcatcher']['options']['smtp-ip']` -  Defaults to `--smtp-ip 0.0.0.0`.
+* `node['mailcatcher']['options']['smtp-port']` -  Defaults to `--smtp-port 1025`.
+* `node['mailcatcher']['options']['http-ip']` -  Defaults to `--http-ip 0.0.0.0`.
+* `node['mailcatcher']['options']['http-port']` -  Defaults to `--http-port 1080`.
 
 # Recipes
 

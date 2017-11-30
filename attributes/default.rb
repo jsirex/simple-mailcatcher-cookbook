@@ -3,7 +3,7 @@
 default['mailcatcher']['user'] = 'mailcatcher'
 default['mailcatcher']['group'] = 'mailcatcher'
 default['mailcatcher']['dir'] = '/opt'
-default['mailcatcher']['version'] = '0.6.2'
+default['mailcatcher']['version'] = '0.6.5'
 
 default['mailcatcher']['service_recipe'] = 'service_systemd'
 

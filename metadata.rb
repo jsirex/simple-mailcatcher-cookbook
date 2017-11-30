@@ -11,9 +11,8 @@ source_url       'https://github.com/jsirex/simple-mailcatcher-cookbook' if resp
 version          '0.1.1'
 
 supports 'debian', '>= 8.0'
-supports 'centos', '>= 7.0'
 
-# depends 'cookbook', '>= 0.0.0'
+depends 'build-essential'
 
 chef_version '>= 12.12'
 

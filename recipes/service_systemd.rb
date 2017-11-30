@@ -19,5 +19,5 @@ systemd_unit 'mailcatcher.service' do
   triggers_reload true
 
   action [:create, :enable, :start]
-  notifies :restart, 'mailcatcher.service', :delayed
+  notifies :restart, 'systemd_unit[mailcatcher.service]', :delayed
 end

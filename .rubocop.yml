@@ -1,16 +1,7 @@
 AllCops:
-  Include:
-    - Gemfile
-    - attributes/**/*
-    - recipes/**/*
-    - libraries/**/*
-    - providers/**/*
-    - resources/**/*
-  Exclude:
-    - metadata.rb
-    - test/**/*
-    - vendor/**/*
-    - .berkshelf/cookbooks/**/*
+  TargetRubyVersion: 2.3
+  DefaultFormatter: fuubar
+  DisplayCopNames: true
 
 Encoding:
   Enabled: false
@@ -34,4 +25,7 @@ Metrics/AbcSize:
   Max: 60
 
 Style/Documentation:
+  Enabled: false
+
+Style/SymbolArray:
   Enabled: false

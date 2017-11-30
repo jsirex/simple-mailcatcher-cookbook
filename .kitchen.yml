@@ -1,21 +1,42 @@
 ---
 driver:
-  name: vagrant
+  name: dokken
+  chef_version: 13.2.20
+  privileged: true
 
 provisioner:
-  name: chef_zero
-  require_chef_omnibus: latest
+  name: dokken
+
+transport:
+  name: dokken
+
+verifier:
+  name: inspec
 
 platforms:
-  - name: chef/debian-7.7
-    platform: debian
-    driver_config:
-      provision_command:
-        - apt-get -y install build-essential
+  - name: debian-9
+    driver:
+      image: dokken/debian-9
+      pid_one_command: /bin/systemd
+    run_list:
+      - recipe[apt]
+
+  - name: ubuntu-16
+    driver:
+      image: dokken/ubuntu-16.04
+      pid_one_command: /bin/systemd
+    run_list:
+      - recipe[apt]
+
+  - name: centos-7
+    driver:
+      image: dokken/centos-7
+      pid_one_command: /usr/lib/systemd/systemd
+    run_list:
+      - recipe[yum]
 
 suites:
   - name: default
     run_list:
-      - recipe[simple-mailcatcher-test]
+      - recipe[simple-mailcatcher]
     attributes:
-

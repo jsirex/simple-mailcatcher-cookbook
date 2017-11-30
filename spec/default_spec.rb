@@ -1,9 +1,13 @@
+# frozen_string_literal: true
+
 require 'spec_helper'
 
 describe 'simple-mailcatcher::default' do
   cached(:chef_run) do
-    ChefSpec::ServerRunner.new.converge(described_recipe)
+    ChefSpec::SoloRunner.new(platform: 'debian', version: '8.7').converge(described_recipe)
   end
 
-  it 'pending your test'
+  it 'runs' do
+    expect(chef_run)
+  end
 end

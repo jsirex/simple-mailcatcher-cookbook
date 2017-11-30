@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 template '/etc/init.d/mailcatcher' do
   source 'mailcatcher.init.erb'
   mode '0755'

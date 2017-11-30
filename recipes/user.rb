@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 user 'mailcatcher user' do
   username node['mailcatcher']['user']
   comment 'MailCatcher User'

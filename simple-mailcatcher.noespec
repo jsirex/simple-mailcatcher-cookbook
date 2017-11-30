@@ -1,8 +1,9 @@
+# -*- mode: yaml -*-
 template-info:
 
   # Don't remove the name and version entries, which are ALWAYS required
   name: "chef-cookbook"
-  version: 1.0.0
+  version: 1.6.0
 
   # The following entries are information about the template itself and can safely
   # be removed on your own project.
@@ -47,7 +48,7 @@ variables:
   name: simple-mailcatcher
   maintainer: Yauhen Artsiukhou
   maintainer_email: jsirex@gmail.com
-  license: apache 2
+  license: MIT
   description: Installs mailcatcher using embedded ruby in chef
   long_description: Installs mailcatcher using embedded ruby in chef
   issues_url: https://github.com/jsirex/simple-mailcatcher-cookbook/issues

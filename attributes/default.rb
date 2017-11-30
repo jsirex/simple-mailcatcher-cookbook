@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 default['mailcatcher']['user'] = 'mailcatcher'
 default['mailcatcher']['group'] = 'mailcatcher'
 default['mailcatcher']['dir'] = '/opt'

@@ -6,7 +6,8 @@ This cookbook installs simple-mailcatcher using chefs' embedded ruby.
 
 ## Platform:
 
-*No platforms defined*
+* debian (>= 8.0)
+* centos (>= 7.0)
 
 ## Cookbooks:
 
@@ -25,15 +26,14 @@ This cookbook installs simple-mailcatcher using chefs' embedded ruby.
 
 # Recipes
 
-* simple-mailcatcher::default
-* simple-mailcatcher::install
-* simple-mailcatcher::service_init
-* simple-mailcatcher::user
+* simple-mailcatcher::default - Installs mailcatcher using embedded ruby in chef
 
 # License and Maintainer
 
 Maintainer:: Yauhen Artsiukhou (<jsirex@gmail.com>)
+
 Source:: https://github.com/jsirex/simple-mailcatcher-cookbook
+
 Issues:: https://github.com/jsirex/simple-mailcatcher-cookbook/issues
 
-License:: apache 2
+License:: MIT

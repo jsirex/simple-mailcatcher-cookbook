@@ -7,7 +7,6 @@ This cookbook installs simple-mailcatcher using chefs' embedded ruby.
 ## Platform:
 
 * debian (>= 8.0)
-* centos (>= 7.0)
 
 ## Cookbooks:
 

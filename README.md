@@ -10,7 +10,8 @@ This cookbook installs simple-mailcatcher using chefs' embedded ruby.
 
 ## Cookbooks:
 
-*No dependencies defined*
+* apt
+* build-essential
 
 # Attributes
 

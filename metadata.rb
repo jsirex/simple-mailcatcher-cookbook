@@ -12,6 +12,7 @@ version          '0.2.0'
 
 supports 'debian', '>= 8.0'
 
+depends 'apt'
 depends 'build-essential'
 
 chef_version '>= 12.12'
